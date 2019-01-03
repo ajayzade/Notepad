@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotepadActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+            <EditText
+                android:id="@+id/enter_file_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#faf4f4"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:hint="@string/enter_your_file_name"
+                android:textColor="#000"
+                tools:ignore="Autofill" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#3c4ffc"/>
+            <EditText
+                android:id="@+id/enter_file_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#faf4f4"
+                android:hint="@string/enter_your_description_here"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
